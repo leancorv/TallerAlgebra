@@ -52,3 +52,7 @@ sumaPotencias q n m = (sumaPotencias q n (m-1)) + q^m*(f2 n q)
 sumaRacionales :: Int -> Int -> Float
 sumaRacionales n 0 = 0
 sumaRacionales n m = (sumaRacionales n (m-1)) + (fromIntegral (sumatoria n)) / (fromIntegral m)
+
+g1 :: Int -> Int -> Int
+g1 i n | n == i = i^n
+       | otherwise = i^n + g1 i (n-1)
