@@ -56,3 +56,29 @@ sumaRacionales n m = (sumaRacionales n (m-1)) + (fromIntegral (sumatoria n)) / (
 g1 :: Int -> Int -> Int
 g1 i n | n == i = i^n
        | otherwise = i^n + g1 i (n-1)
+
+
+
+{-
+--4)
+g1 i n 
+ | n == i = i ^ n
+ | otherwise = i ^ n + g1 i (n-1)
+
+--5)
+g2_Interna :: Int -> Int 
+g2_Interna n
+ | n == 0 = 1
+ | otherwise = n ^ n + g2_Interna (n-1) 
+
+g2 :: Int -> Int
+g2 n 
+ | n == 0 = 1
+ | otherwise = g2_Interna n + g2 (n-1)
+
+--6)
+
+
+
+--7)
+-}
