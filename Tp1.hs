@@ -38,7 +38,7 @@ es2Pseudoprimo n = esAPseudoprimo 2 n
 
 -- EJERCICIO 3: cantidad3Pseudoprimos
 --cantidad3Pseudoprimos :: Integer -> Integer
---meme
+
 
 -- EJERCICIO 4: kesimo2y3Pseudoprimo
 --kesimo2y3Pseudoprimo :: Integer -> Integer
